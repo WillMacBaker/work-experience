@@ -1,46 +1,65 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="stylesheet" href="index.css"> -->
+    <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to the site!</title>
 </head>
 <body>
-    <h1>Welcome to the Test Playground!</h1>
-    <p>The above is made by using a 'h1' element, </p>
-    <p>Hello!</p>
-    <p>This is a basic 'p' element and is used to type out lines of text </p>
+    <h1>Welcome to the Web Development Intro!</h1>
+    <p>I've set this up so that you can get to grips with the absolute basics! What this exercise will do is get you adjusting things, and adding other elements.</p>
+    <p>
+        I've put together this basic repository so that you can check through a few basic exercises; depending on what experience you already have, we can skip over certain items, or we can go
+        through each page thoroughly.
+    </p>
+    <p>At any time, please feel free to ask me questions, and I'll do my best to help out during the code session!</p>
+    
+    <!-- Add a heading with an id attribute for styling -->
+    <h2 id="header-task">Your tasks for this session, are broken down into the following sections.</h2>
 
-
-    <h2>Your tasks for this session, is to...</h2>
-    <ul>
         <section>
-        <!-- Section 1: Understanding basic HTML elements, and how they make things show up on a page. -->
-            <h3 class="section-1"> </h3>
+            <h3 class="section-header" id="header-3">Section 1: Understanding basic HTML elements</h3>
             <li>Check over the code for this page, and get a basic understanding of how things are shown. Look up the names of the tags!</li>
             <li>Try adding a few new basic elements to this page. Try using some 'p' tags, but get creative!</li>
             <li>Once you've figured out how to add some elements, try to write a short section telling me about what you'd like to make. A website? A game? Some other software item?</li>
         </section>
-        
-        <!-- Section 2: Styling, and how we do it on a basic level -->
+        <!-- Add a new section with a link -->
         <section>
-            <h3 class="section-2">Section 2: Styling, and how we do it!</h3>
-            <li>You'll notice this page...looks a little bare. This is why we need *css*! Check out the index.css file to the left, and read through the comments I've placed there.</li>
+            <h3 class="section-header" id="header-3">Section 2: Styling and Basic CSS</h3>
+            <li>You'll notice this page...looks a little bare. This is why we need CSS! Check out the index.css file to the left, and read through the comments I've placed there.</li>
             <li>If you're reading this in the vscode window, you should see that the elements on this page have something called 'classes' and 'id's on them. Have a look through, and see which ones are in the index.css file!</li>
-            <!-- TODO FOR WILL, ADD ONE CLASS ENTRY TO STYLE ONE THING, BUT COMMENTED OUT. IN THE CSS CODE, ASK THEM TO UNCOMMENT SECTION, AND SAVE. -->
-            
-            
-            
-            <li></li>
         </section>
 
-        <!-- Section 3: Working with Git, and basic version control! -->
+        <!-- Add a new section with a form -->
         <section>
-            <h3></h3>
-            <li></li>
-        </section>    
-    </ul>
-    <a href="https://www.w3schools.com/html/html_elements.asp"> If you want to learn more, and get introduced with a basic start, click on this text.</a>
+            <h3 class="section-header" id="header-3">Section 3: Forms and Basic Interactivity</h3>
+            <form>
+                <label for="name">What's your name?</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">What's your email address?</label>
+                <input type="email" id="email" name="email"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+         <!-- Based on the information supplied above,  -->
+        <section>
+            <h3 class="section-header" id="header-4">Section 4: Forms and Basic Interactivity</h3>
+            <form>
+                <label for="name">What's your name?</label>
+                <input type="text" id="nameInput" name="name"><br><br>
+                <label for="email">What's your email address?</label>
+                <input type="email" id="emailInput" name="email"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+    <button type="button" onclick="location.href='page1.html'">Move onto page 1</button> 
+   
+    
+    
+    <li><a href="#header-task">Return to top</a></li>
+    <script src="./script.js"></script>
 </body>
 </html>
